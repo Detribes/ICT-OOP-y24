@@ -1,0 +1,7 @@
+#ifndef ICT_HOMEWORK_3_RESTOREPOINTTYPE_H
+#define ICT_HOMEWORK_3_RESTOREPOINTTYPE_H
+
+enum RestorePointType {
+    ZipSplitFS, ZipSingleFS
+};
+#endif //ICT_HOMEWORK_3_RESTOREPOINTTYPE_H
