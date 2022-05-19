@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cd8a5279-8a8f-44e0-bf1e-5a2e488e2eb0" name="Changes" comment="Tests and CMakeList of my homework#1 Galinovski Roman" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/labs_src/lab1/main.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/labs_tests/lab1_tests.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/labs_src/lab1/ClosedPoly.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/labs_src/lab1/ClosedPoly.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/labs_src/lab1/Triangle.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/labs_src/lab1/Trapezoid.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/labs_src/lab1/Polygon.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/labs_src/lab1/Polygon.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/labs_src/lab1/Triangle.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/labs_tests/CMakeLists.txt" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="OCResolveContextSettings">
+    <option name="configuration" value="0-Debug-labs" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2021" />
+    <option name="minorVersion" value="3.3" />
+  </component>
+  <component name="ProjectId" id="26R5IZdpkbVuP9VR792FCzAqumc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.advertisement.text.has.clang-format" value="true" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="cmake.loaded.for.project" value="true" />
+    <property name="ctest.advertisement.all.test.configuration.is.created" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager" selected="CTest Application.All CTest">
+    <configuration name="CreateSharpTriangle.RightTriangleCheckFailed_ThrowException" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="unit_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="unit_tests" TEST_CLASS="CreateSharpTriangle" TEST_METHOD="RightTriangleCheckFailed_ThrowException" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateTrapezoid.PerimeterAndAreaCalculatedCorrectly" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="unit_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="unit_tests" TEST_CLASS="CreateTrapezoid" TEST_METHOD="PerimeterAndAreaCalculatedCorrectly" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateTriangle.PerimeterAndAreaCalculatedCorrectly" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="unit_tests" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="unit_tests" TEST_CLASS="CreateTriangle" TEST_METHOD="PerimeterAndAreaCalculatedCorrectly" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IsConvexPolygon.IsConvex_AnyThrows" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="unit_tests" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="unit_tests" TEST_CLASS="IsConvexPolygon" TEST_METHOD="IsConvex_AnyThrows" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IsRegularPolygon.RegularPolygonCreateCorrectly_NoThrows" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="unit_tests" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="unit_tests" TEST_CLASS="IsRegularPolygon" TEST_METHOD="RegularPolygonCreateCorrectly_NoThrows" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All CTest" type="CTestRunConfiguration" factoryName="CTestRun" PROGRAM_PARAMS="--extra-verbose" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://$CMakeCurrentLocalGenerationDir$" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_PATH="$CTestCurrentExecutableName$" EXPLICIT_BUILD_TARGET_NAME="all" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CTest Application.All CTest" />
+      <item itemvalue="Google Test.CreateSharpTriangle.RightTriangleCheckFailed_ThrowException" />
+      <item itemvalue="Google Test.CreateTrapezoid.PerimeterAndAreaCalculatedCorrectly" />
+      <item itemvalue="Google Test.CreateTriangle.PerimeterAndAreaCalculatedCorrectly" />
+      <item itemvalue="Google Test.IsRegularPolygon.RegularPolygonCreateCorrectly_NoThrows" />
+      <item itemvalue="Google Test.IsConvexPolygon.IsConvex_AnyThrows" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Google Test.IsConvexPolygon.IsConvex_AnyThrows" />
+        <item itemvalue="Google Test.CreateSharpTriangle.RightTriangleCheckFailed_ThrowException" />
+        <item itemvalue="Google Test.IsRegularPolygon.RegularPolygonCreateCorrectly_NoThrows" />
+        <item itemvalue="Google Test.CreateTriangle.PerimeterAndAreaCalculatedCorrectly" />
+        <item itemvalue="Google Test.CreateTrapezoid.PerimeterAndAreaCalculatedCorrectly" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cd8a5279-8a8f-44e0-bf1e-5a2e488e2eb0" name="Changes" comment="" />
+      <created>1647373481888</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1647373481888</updated>
+      <workItem from="1647373485259" duration="18270000" />
+      <workItem from="1647427718806" duration="3994000" />
+      <workItem from="1647440746265" duration="10475000" />
+      <workItem from="1647454146737" duration="12000" />
+      <workItem from="1647454358083" duration="6680000" />
+      <workItem from="1647465576950" duration="933000" />
+      <workItem from="1647516834672" duration="4000" />
+      <workItem from="1647543410351" duration="65000" />
+      <workItem from="1647545847796" duration="3652000" />
+      <workItem from="1647941939954" duration="607000" />
+      <workItem from="1648342896415" duration="2000" />
+      <workItem from="1648392773973" duration="1000" />
+      <workItem from="1648501737091" duration="589000" />
+      <workItem from="1652325410490" duration="324000" />
+      <workItem from="1652750263223" duration="869000" />
+      <workItem from="1652799007388" duration="1543000" />
+    </task>
+    <task id="LOCAL-00001" summary="Headers of my homework#1 Galinovski Roman">
+      <created>1647457480201</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1647457480201</updated>
+    </task>
+    <task id="LOCAL-00002" summary="CPP files of my homework#1 Galinovski Roman">
+      <created>1647457526569</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1647457526569</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Tests and CMakeList of my homework#1 Galinovski Roman">
+      <created>1647457575911</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1647457575911</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Headers of my homework#1 Galinovski Roman" />
+    <MESSAGE value="CPP files of my homework#1 Galinovski Roman" />
+    <MESSAGE value="Tests and CMakeList of my homework#1 Galinovski Roman" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tests and CMakeList of my homework#1 Galinovski Roman" />
+  </component>
+</project>
