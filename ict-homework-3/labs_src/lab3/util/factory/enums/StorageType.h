@@ -7,6 +7,6 @@
  * хранящегося в оперативной памяти (т.е. пока существует процесс с программой).
  */
 enum  StorageType{
-    FILES,MEMORY
+    FILES, MEMORY
 };
 #endif //ICT_HOMEWORK_3_STORAGETYPE_H

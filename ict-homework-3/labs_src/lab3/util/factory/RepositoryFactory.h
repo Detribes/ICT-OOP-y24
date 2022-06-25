@@ -1,7 +1,8 @@
 #ifndef ICT_HOMEWORK_3_REPOSITORYFACTORY_H
 #define ICT_HOMEWORK_3_REPOSITORYFACTORY_H
 
-#include "../../repository/IRepository.h"
+#include "../../repository/FSRepository.h"
+#include "../../repository/MockRepository.h"
 #include "enums/RepositoryType.h"
 #include "enums/RestorePointType.h"
 
@@ -19,8 +20,23 @@
 class RepositoryFactory final {
 public:
     template<class Object>
-    static IRepository create(RepositoryType repoType, RestorePointType restoreType, std::string name, Object args,...);
-};
+    static std::shared_ptr<IRepository> create(RepositoryType repoType,
+                        RestorePointType restoreType,
+                        std::string name,
+                        Object args) {
 
+        std::shared_ptr<IRepository> result;
+        switch (repoType) {
+            case FS:
+                result = std::make_shared<FSRepository>(name, (std::filesystem::path)(args), restoreType);
+                break;
+            case Mock:
+                result = std::make_shared<MockRepository>(name, restoreType);
+                break;
+        }
+        std::cout << "Created repository " << result->getName() << std::endl;
+        return result;
+    }
+};
 
 #endif //ICT_HOMEWORK_3_REPOSITORYFACTORY_H

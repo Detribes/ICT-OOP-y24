@@ -2,7 +2,7 @@
 #define ICT_HOMEWORK_3_BACKUPJOB_H
 
 #include <list>
-#include "JobObject.h"
+#include "IJobObject.h"
 #include "../../repository/IRepository.h"
 
 /**
@@ -14,9 +14,10 @@
  */
 class BackupJob {
 private:
-    std::string name_;
-    std::list<JobObject> jobs_;
-    IRepository repo_;
+    // список задач/файлов охватываемых этой задачей бэкапа
+    std::list<std::shared_ptr<IJobObject>> jobs_;
+    // хранит данные об уже созданных бэкапах: их список, список файлов и дату в каждом из них и тд
+    std::shared_ptr<IRepository> repo_;
 public:
     /**
     * Бекап джоба при создании принимает в конструктор: имя и репозиторий с которым она работает
@@ -24,13 +25,13 @@ public:
     * задаче сказано, что надо через бекап-джобу, но я посчитал что можно и по другому,
     * особенно если в бекап-джобой никто не будет работать напрямую.
     */
-    BackupJob(std::string name, const IRepository& repo);
+    BackupJob(std::shared_ptr<IRepository> repo);
 
-    void run();
-    void addJob(const JobObject& job);
-    void removeJob(const JobObject& job);
+    void backup(std::string name);
+    void addJob(std::shared_ptr<IJobObject> job);
+    void removeJob(std::shared_ptr<IJobObject> job);
 
-    ~BackupJob()=default;
+    ~BackupJob() = default;
 };
 
 
