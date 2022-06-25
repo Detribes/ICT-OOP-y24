@@ -28,8 +28,8 @@
 
 #include "ziplocalentry.hpp"
 
-#include "Zipios/zipios/zipiosexceptions.hpp"
-#include "Zipios/zipios/dosdatetime.hpp"
+#include "zipios/zipiosexceptions.hpp"
+#include "zipios/dosdatetime.hpp"
 
 #include "zipios_common.hpp"
 

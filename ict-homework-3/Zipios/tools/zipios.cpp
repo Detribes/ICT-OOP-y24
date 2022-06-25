@@ -30,8 +30,8 @@
  * zip and unzip for example).
  */
 
-#include "zipios/zipfile.hpp"
-#include "zipios/zipiosexceptions.hpp"
+#include "Zipios/zipios/zipfile.hpp"
+#include "Zipios/zipios/zipiosexceptions.hpp"
 
 #include <cstring>
 

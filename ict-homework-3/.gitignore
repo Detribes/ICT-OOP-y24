@@ -1,3 +1,7 @@
 build*/
 /.ccls-cache/
 /cmake-build-debug
+/.idea
+/Zipios
+/labs_tests/Makefile
+/labs_src/Makefile

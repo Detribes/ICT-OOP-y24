@@ -30,7 +30,7 @@
  * a Zip archive or an on disk directory of files.
  */
 
-#include "Zipios/zipios/fileentry.hpp"
+#include "zipios/fileentry.hpp"
 
 
 namespace zipios

@@ -31,7 +31,7 @@
 
 #include "deflateoutputstreambuf.hpp"
 
-#include "Zipios/zipios/fileentry.hpp"
+#include "zipios/fileentry.hpp"
 
 
 namespace zipios

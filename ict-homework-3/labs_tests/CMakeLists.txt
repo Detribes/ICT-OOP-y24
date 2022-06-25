@@ -8,17 +8,9 @@ set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 set(BUILD_GMOCK OFF CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(gtest)
 
-add_executable(
-    unit_tests
-        lab3_tests.cpp
-)
+add_executable(unit_tests lab3_tests.cpp)
 
-target_link_libraries(unit_tests
-  PRIVATE
-    labs
-    gtest_main
-  )
-
+target_link_libraries(unit_tests gtest_main labs)
 
 # automatic discovery of unit tests
 include(GoogleTest)

@@ -33,7 +33,7 @@
  * \sa zipios::DirectoryCollection
  */
 
-#include "Zipios/zipios/fileentry.hpp"
+#include "zipios/fileentry.hpp"
 
 
 namespace zipios

@@ -36,7 +36,7 @@
  * \sa appendzip.cpp
  */
 
-#include "Zipios/zipios/zipios-config.hpp"
+#include "zipios/zipios-config.hpp"
 
 
 namespace zipios

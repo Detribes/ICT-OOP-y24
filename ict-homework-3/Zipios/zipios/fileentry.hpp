@@ -34,8 +34,8 @@
  * \sa zipios::FileCollection
  */
 
-#include "Zipios/zipios/filepath.hpp"
-#include "Zipios/zipios/dosdatetime.hpp"
+#include "zipios/filepath.hpp"
+#include "zipios/dosdatetime.hpp"
 
 #include <memory>
 #include <vector>

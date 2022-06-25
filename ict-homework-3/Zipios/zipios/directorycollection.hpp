@@ -30,8 +30,8 @@
  * of files as found in a directory on disk.
  */
 
-#include "Zipios/zipios/filecollection.hpp"
-#include "Zipios/zipios/directoryentry.hpp"
+#include "zipios/filecollection.hpp"
+#include "zipios/directoryentry.hpp"
 
 
 namespace zipios
