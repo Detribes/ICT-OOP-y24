@@ -1,31 +1,23 @@
 #include "MemoryStorage.h"
 
-MemoryStorage::MemoryStorage(std::string name,std::vector <char> data) {
-    for(char dt: data){
-        this->data_.push_back(dt);
-    }
-    this->name_=name;
+#include <streambuf>
+#include <istream>
+
+MemoryStorage::MemoryStorage(std::filesystem::path path) : path_(std::move(path))
+{
 }
 
-std::string MemoryStorage::getName() {
-    return name_;
+// путь к изначальному месту хранения
+std::filesystem::path MemoryStorage::getPath() {
+    return path_;
 }
 
-std::ofstream MemoryStorage::copyInto() {
-    std::ofstream outputStream(name_,std::ios::binary);
-    size_t file_size =  std::filesystem::file_size(name_);
-    data_.resize(file_size/sizeof(std::byte));
-    std::iota(data_.begin(), data_.end(), 0);
-    std::random_shuffle(data_.begin(), data_.end());
-    outputStream.write((char*)&data_[0], file_size);
-    outputStream.close();
-    return outputStream;
+// записывает данные в оригинальный файл
+bool MemoryStorage::restoreData() {
+    return true;
 }
-std::ifstream MemoryStorage::retrieve() {
-    std::ifstream inputStream(name_, std::ios::binary);
-    size_t file_size =  std::filesystem::file_size(name_);
-    inputStream.seekg(0, std::ios::beg);
-    inputStream.read(data_.data(), file_size);
-    inputStream.close();
-    return inputStream;
+
+// сохраняет данные из файла
+bool MemoryStorage::updateData(std::vector<uint8_t> data) {
+    return true;
 }

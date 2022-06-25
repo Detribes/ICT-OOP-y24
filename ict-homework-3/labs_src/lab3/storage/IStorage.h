@@ -9,14 +9,17 @@
 #include <vector>
 #include <filesystem>
 
-
-class IStorage{
+class IStorage {
 public:
-    IStorage(){}
-    virtual ~IStorage(){}
-    virtual std::string getName();
-    virtual std::ifstream retrieve();
-    virtual std::ofstream copyInto();
+    IStorage() = default;
+    
+    // путь к изначальному месту хранения
+    virtual std::filesystem::path getPath() = 0;
+    // записывает данные в оригинальный файл
+    virtual bool restoreData() = 0;
+    // сохраняет данные из файла
+    virtual bool updateData(std::vector<uint8_t>) = 0;
 
+    ~IStorage() = default;
 };
 #endif //ICT_HOMEWORK_3_ISTORAGE_H

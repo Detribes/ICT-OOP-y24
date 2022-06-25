@@ -2,17 +2,21 @@
 #define ICT_HOMEWORK_3_MEMORYSTORAGE_H
 
 #include "IStorage.h"
+#include "../util/backupjob/IJobObject.h"
 
-class MemoryStorage : public IStorage{
+class MemoryStorage : public IStorage {
 private:
-    std::vector <char> data_;
-    std::string name_;
+    std::filesystem::path path_;
+    //std::vector<uint8_t> data_;
 public:
-    explicit MemoryStorage(std::string name, std::vector <char> data);
+    MemoryStorage(std::filesystem::path path);
 
-    std::string getName() override;
-    std::ofstream copyInto() override;
-    std::ifstream retrieve() override;
+    // путь к изначальному месту хранения
+    std::filesystem::path getPath() override;
+    // записывает данные в оригинальный файл
+    bool restoreData() override;
+    // сохраняет данные из файла
+    bool updateData(std::vector<uint8_t>) override;
 
     ~MemoryStorage() = default;
 
