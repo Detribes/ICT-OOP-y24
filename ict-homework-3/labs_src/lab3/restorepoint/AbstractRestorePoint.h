@@ -6,22 +6,17 @@
 class  AbstractRestorePoint : public IRestorePoint {
 private:
     std::string name_;
-    std::unordered_map <std::string,IStorage> storagesToCopy_;
-    std::unordered_map <std::string,IStorage> actualStorages_;
-protected:
-    virtual std::unordered_map <std::string, IStorage> getStoragesToCopy();
-    virtual void resetStoragesToCopy();
+    std::unordered_map <std::string, std::shared_ptr<IStorage>> actualStorages_;
 public:
     explicit AbstractRestorePoint(std::string name);
 
     virtual std::string getName() override;
-    virtual void addNewStorage(std::string name, IStorage storage) override;
-    virtual IStorage getStorage(std::string name) override;
-    virtual std::unordered_map <std::string, IStorage> getStorages() override;
+    virtual void addNewStorage(std::string name, std::shared_ptr<IStorage> storage) override;
+    virtual std::shared_ptr<IStorage> getStorage(std::string name) override;
+    virtual std::unordered_map <std::string, std::shared_ptr<IStorage>> getStorages() override;
+    virtual void generate(std::list<std::shared_ptr<IJobObject>> jobs) override;
 
     virtual ~AbstractRestorePoint() = default;
-
-
 };
 
 

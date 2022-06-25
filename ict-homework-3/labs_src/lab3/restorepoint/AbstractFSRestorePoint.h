@@ -3,12 +3,12 @@
 
 #include "AbstractRestorePoint.h"
 
-class AbstractFSRestorePoint : public AbstractRestorePoint{
+class AbstractFSRestorePoint : public AbstractRestorePoint {
 private:
     std::filesystem::path path_;
 public:
     explicit AbstractFSRestorePoint(std::string name, std::filesystem::path path);
-    virtual std::filesystem::path getPath();
+    std::filesystem::path getPath();
     virtual ~AbstractFSRestorePoint() = default;
 };
 

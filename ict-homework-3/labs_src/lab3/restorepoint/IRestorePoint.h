@@ -4,22 +4,33 @@
 #include <unordered_map>
 #include <map>
 #include <set>
+#include <list>
+#include "../util/backupjob/IJobObject.h"
 #include "../storage/IStorage.h"
 
 
-class IRestorePoint{
+class IRestorePoint {
 public:
-    IRestorePoint();
+    IRestorePoint() = default;
 
-    virtual std::string getName();
-    virtual void addNewStorage(std::string name, IStorage storage);
-    virtual IStorage getStorage(std::string name);
-    virtual std::unordered_map <std::string, IStorage> getStorages();
+    virtual std::string getName() = 0;
+    
+    virtual void addNewStorage(std::string name, std::shared_ptr<IStorage> storage) = 0;
 
-    virtual void save();
-    virtual void load();
+    virtual std::shared_ptr<IStorage> getStorage(std::string name) = 0;
 
-    virtual ~IRestorePoint();
+    virtual std::unordered_map<std::string, std::shared_ptr<IStorage>> getStorages() = 0;
 
+    //virtual std::time_t getCreationDate() = 0;
+
+    
+    // сохраняет данные из стораджей в оригинальную точку восстановления
+    virtual void save() = 0;
+    // загружает ресторпоинт из указанного пути (с зипами например)
+    virtual void load() = 0;
+    // заполняет ресторпоинт данными из джоб, создает зипфайл
+    virtual void generate(std::list<std::shared_ptr<IJobObject>> jobs) = 0;
+
+    virtual ~IRestorePoint() = default;
 };
 #endif //ICT_HOMEWORK_3_IRESTOREPOINT_H
